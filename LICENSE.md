@@ -1,10 +1,10 @@
 # License
 
-Minami is free software, licensed under the Apache License, Version 2.0 (the
+Raygun is free software, licensed under the Apache License, Version 2.0 (the
 "License"). Commercial and non-commercial use are permitted in compliance with
 the License.
 
-Copyright (c) 2014-2015 Nijiko Yonskai <nijikokun@gmail.com> and the
+Copyright (c) 2014-2017 samme, Nijiko Yonskai <nijikokun@gmail.com>, and the
 [contributors to Minami](https://github.com/Nijikokun/minami/graphs/contributors).
 All rights reserved.
 
@@ -23,12 +23,12 @@ As stated in Section 7, "Disclaimer of Warranty," of the License:
 > appropriateness of using or redistributing the Work and assume any risks
 > associated with Your exercise of permissions under this License.
 
-The source code for JSDoc 3 is available at:
+The source code for Minami is available at:
 https://github.com/Nijikokun/minami
 
 # Third-Party Software
 
-Minami includes or depends upon the following third-party software, either in
+Raygun includes or depends upon the following third-party software, either in
 whole or in part. Each third-party software package is provided under its own
 license.
 

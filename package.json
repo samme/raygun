@@ -1,6 +1,6 @@
 {
-  "name": "minami",
-  "version": "1.1.1",
+  "name": "raygun",
+  "version": "0.0.0",
   "description": "Clean and minimal JSDoc 3 Template / Theme",
   "main": "publish.js",
   "scripts": {
@@ -8,15 +8,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nijikokun/minami.git"
+    "url": "git+https://github.com/samme/raygun.git"
   },
-  "author": "Nijiko Yonskai <nijikokun@gmail.com>",
-  "licenses": [{
-    "type": "Apache-2.0",
-    "url": "http://www.apache.org/licenses/LICENSE-2.0"
-  }],
+  "keywords": [
+    "jsdoc"
+  ],
+  "author": "",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Nijikokun/minami/issues"
+    "url": "https://github.com/samme/raygun/issues"
   },
-  "homepage": "https://github.com/Nijikokun/minami"
+  "homepage": "https://github.com/samme/raygun#readme",
+  "devDependencies": {
+    "color-themes-for-google-code-prettify": "^2.0.4"
+  }
 }

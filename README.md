@@ -1,86 +1,60 @@
-# Minami
+![Screenshot](./screenshot.png)
 
-A clean, responsive documentation template theme for JSDoc 3.
+Raygun
+======
 
-![Minami Screenshot](http://puu.sh/gOyNe/66c3adcb97.png)
+A clean, responsive documentation template theme for JSDoc 3. Based on [Minami](https://github.com/Nijikokun/minami).
 
-
-## Uses
-
-- [the Taffy Database library](http://taffydb.com/)
-- [Underscore Template library](http://underscorejs.org/#template)
-- [Montserrat](https://fonts.google.com/specimen/Montserrat) & Helvetica Neue
-
-
-## Install
+NPM
+---
 
 ```bash
-$ npm install --save-dev minami
+npm install --save-dev samme/raygun
 ```
 
+In your project's `package.json`, add to `scripts`:
 
-## Usage
+```json
+"scripts": {
+  "docs": "jsdoc --configure jsdoc-conf.json"
+}
+```
+
+Create a `jsdoc-conf.json` file and add `opts.template`:
+
+```json
+"opts": {
+  "template": "node_modules/raygun"
+}
+```
+
+(See [Configuring JSDoc with conf.json](http://usejsdoc.org/about-configuring-jsdoc.html); [Example config file](https://github.com/jsdoc3/jsdoc/blob/master/conf.json.EXAMPLE).)
+
+Then
+
+```bash
+npm run docs
+```
+
+Non-NPM
+-------
 
 Clone repository to your designated `jsdoc` template directory, then:
 
 ```bash
-$ jsdoc entry-file.js -t path/to/minami
+jsdoc entry-file.js -t path/to/raygun
 ```
 
+(See [Command-line arguments to JSDoc](http://usejsdoc.org/about-commandline.html).)
 
-### Node.js Dependency
+Thanks :heart:
+------
 
-In your projects `package.json` file add a generate script:
+- [Nijikokun/minami](https://github.com/Nijikokun/minami)
+- [chriskempson/tomorrow-theme](https://github.com/chriskempson/tomorrow-theme)
+- [jmblog/color-themes-for-google-code-prettify](https://github.com/jmblog/color-themes-for-google-code-prettify)
 
-```json
-"script": {
-  "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose"
-}
-```
-
-In your `.jsdoc.json` file, add a template option.
-
-```json
-"opts": {
-  "template": "node_modules/minami"
-}
-```
-
-
-### Example JSDoc Config
-
-```json
-{
-    "tags": {
-        "allowUnknownTags": true,
-        "dictionaries": ["jsdoc"]
-    },
-    "source": {
-        "include": ["lib", "package.json", "README.md"],
-        "includePattern": ".js$",
-        "excludePattern": "(node_modules/|docs)"
-    },
-    "plugins": [
-        "plugins/markdown"
-    ],
-    "templates": {
-        "cleverLinks": false,
-        "monospaceLinks": true,
-        "useLongnameInNav": false
-    },
-    "opts": {
-        "destination": "./docs/",
-        "encoding": "utf8",
-        "private": true,
-        "recurse": true,
-        "template": "./node_modules/minami"
-    }
-}
-```
-
-Specifying a number for useLongnameInNav it will be the max number of path elements to show in nav (starting from Class).
-
-
-## License
+License
+-------
 
 Licensed under the Apache2 license.
