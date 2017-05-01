@@ -1,6 +1,6 @@
 {
   "name": "raygun",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Clean and minimal JSDoc 3 Template / Theme",
   "main": "publish.js",
   "repository": {
