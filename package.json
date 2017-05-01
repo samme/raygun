@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "Clean and minimal JSDoc 3 Template / Theme",
   "main": "publish.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/samme/raygun.git"
